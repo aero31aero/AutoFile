@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="AutoFileColor">#2d8750</color>
+    <color name="AutoFileClickColor">#b0b0b0</color>
+    <color name="AutoFileBackColor">#FFFFFF</color>
+</resources>

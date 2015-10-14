@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <objectAnimator
+        android:propertyName="background"
+        android:duration="5"
+        android:valueTo="@drawable/clicked"
+        android:valueFrom="@drawable/rounded"
+        android:valueType="intType"/>
+    <objectAnimator
+        android:propertyName="background"
+        android:duration="5"
+        android:valueFrom="@drawable/clicked"
+        android:valueTo="@drawable/rounded"
+        android:valueType="intType"/>
+
+</set>
+
+
+

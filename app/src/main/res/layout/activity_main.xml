@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/AutoFileColor"
+    android:orientation="vertical">
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toggle AutoFile Service"
+        android:id="@+id/switchService"
+        android:background="@drawable/rounded"
+        android:paddingLeft="15dp"
+        android:paddingBottom="7dp"
+        android:checked="false"
+        android:textColor="@color/AutoFileColor"
+        android:paddingTop="7dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:onClick="onServiceToggleClick" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scan Paths"
+            android:id="@+id/buttonScanPaths"
+            android:background="@drawable/rounded"
+            android:layout_marginTop="10dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textColor="@color/AutoFileColor"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:onClick="onPathsButtonClick" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Rule"
+            android:id="@+id/buttonCreateRule"
+            android:background="@drawable/rounded"
+            android:layout_marginTop="10dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textColor="@color/AutoFileColor"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:nestedScrollingEnabled="false"
+            android:onClick="onRuleButtonClick" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Saved Rules:"
+        android:id="@+id/textView22"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView"
+        android:background="@drawable/rounded"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

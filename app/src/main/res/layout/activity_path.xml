@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.bits.rohitt.autofile.PathActivity"
+    android:background="@color/AutoFileColor">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Add New Directory"
+        android:id="@+id/textView24"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+        android:paddingLeft="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:background="@drawable/rounded"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:hint="Complete Directory Path"
+        android:paddingLeft="5dp"
+        android:textColor="@color/AutoFileColor" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Directory"
+        android:id="@+id/button6"
+        android:background="@drawable/rounded"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/AutoFileColor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Monitored Directories:"
+        android:id="@+id/textView25"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+        android:paddingLeft="5dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView2"
+        android:background="@drawable/rounded"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+</LinearLayout>
